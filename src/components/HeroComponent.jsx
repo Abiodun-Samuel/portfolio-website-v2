@@ -29,6 +29,10 @@ const HeroComponent = () => {
     "r",
   ];
 
+  const proceed = () => {
+    window.location.href = "/#contact";
+  };
+
   useEffect(() => {
     timer.current = setTimeout(() => {
       setLetterClass("text-animate-hover");
@@ -43,7 +47,7 @@ const HeroComponent = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-7">
-            <div className="hero__text">
+            <div className="hero__text pt-5">
               <h1 className="my-2">
                 <AnimatedLetters
                   letterClass={letterClass}
@@ -76,8 +80,8 @@ const HeroComponent = () => {
                     PROJECTS
                   </a>
                   <button
+                    onClick={proceed}
                     className="btn btn-outline-primary mx-2 rounded-pill"
-                    href="#contact"
                   >
                     CONTACT
                   </button>

@@ -33,6 +33,7 @@ body {
   --gray-dark: #343a40;
   --primary: #3490dc;
   --secondary: #6c757d;
+  --tertiary: #151030;
   --success: #38c172;
   --info: #6cb2eb;
   --warning: #ffed4a;
@@ -52,6 +53,12 @@ section {
   font-weight: 700;
 }
 /* util class  */
+.margin-right {
+  margin-right: 5px;
+}
+.bg-ter {
+  background-color: var(--tertiary) !important;
+}
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(170 166 195 / var(--tw-text-opacity)) !important;
@@ -67,7 +74,23 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+/* nav bar  */
+.header {
+  padding: 10px 0;
+  transition: 500ms ease;
+}
+.header a {
+  color: var(--gray-dark);
+  font-size: 1.1rem;
+}
+.header a:hover {
+  color: var(--purple);
+}
+.menu_toggler {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
 /* hero compnent  */
 #hero {
   background: url("./assets/images/bg/herobg.jpg");
@@ -137,8 +160,16 @@ section {
   background: #151030;
   padding: 10px;
 }
-
-/* footer  */
+/* contact component */
+.contact__box input,
+.contact__box textarea {
+  background: var(--tertiary) !important;
+  border-color: var(--tertiary);
+  box-shadow: var(--shadow-1);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+/* footer component */
 #footer {
   background: #242424;
 }

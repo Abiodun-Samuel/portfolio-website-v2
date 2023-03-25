@@ -7,6 +7,7 @@ import BlogPage from "./pages/BlogPage";
 import HomeLayout from "./Layout/HomeLayout";
 import AOS from "aos";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   AOS.init({ duration: 500 });
@@ -39,6 +40,7 @@ function App() {
   return (
     <main>
       <RouterProvider router={router} />
+      <Toaster />
     </main>
   );
 }
