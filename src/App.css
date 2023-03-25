@@ -48,7 +48,6 @@ section {
   padding: 4rem 0;
 }
 .component__header h2 {
-  color: var(--light);
   font-size: 3rem;
   font-weight: 700;
 }
@@ -57,7 +56,7 @@ section {
   --tw-text-opacity: 1;
   color: rgb(170 166 195 / var(--tw-text-opacity)) !important;
 }
-.radial-text {
+.text-radial {
   background: radial-gradient(
     circle,
     rgba(63, 94, 251, 1) 0%,
@@ -74,6 +73,11 @@ section {
   background: url("./assets/images/bg/herobg.jpg");
   background-position: center;
   background-size: cover;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
 }
 #hero .hero__text h1 {
   font-size: 3.6rem;
@@ -87,31 +91,24 @@ section {
 #hero .hero__text a:hover {
   color: var(--purple);
 }
-
-#hero .hero__info-one,
-#hero .hero__info-two {
+/* about component  */
+#about {
+  position: relative;
+}
+#about .about_img {
   position: absolute;
-  /* background: var(--light); */
-  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
   background: rgb(255, 255, 255);
   box-shadow: var(--shadow-1);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
-}
-#hero .hero__info-one {
-  bottom: 25%;
-  left: 8%;
-}
-#hero .hero__info-two {
-  bottom: 45%;
-  right: 5%;
+  margin-top: -4.7rem;
 }
 
-/* about component  */
-#about {
-  position: relative;
-}
 #about .about__skills {
   display: flex;
   align-items: center;
@@ -120,8 +117,8 @@ section {
   flex-wrap: wrap;
 }
 #about .about__skills .img {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   padding: 2px;
   border-radius: 5px;
   background: radial-gradient(
@@ -149,6 +146,6 @@ section {
 /* media query  */
 @media screen and (max-width: 576px) {
   #hero .hero__text h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }

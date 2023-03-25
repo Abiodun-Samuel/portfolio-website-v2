@@ -1,10 +1,11 @@
 import { Outlet } from "react-router-dom";
 import FooterComponent from "../components/partials/FooterComponent";
+import HeaderComponent from "../components/partials/HeaderComponent";
 
 const HomeLayout = () => {
   return (
     <>
-      <div>Nav header component</div>
+      <HeaderComponent />
       <main>
         <Outlet />
       </main>

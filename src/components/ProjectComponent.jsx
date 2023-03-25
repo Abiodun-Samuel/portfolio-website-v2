@@ -3,8 +3,8 @@ const ProjectComponent = () => {
     <section id="projects">
       <div className="container">
         <div className="component__header">
-          <p className="text-secondary lead my-1">MY WORK</p>
-          <h2 className="text-light">Projects</h2>
+          <p className="text-light lead my-1">MY WORK</p>
+          <h2 className="text-radial">Projects</h2>
           <div className="row">
             <div className="col-lg-8 my-1">
               <p className="text-secondary lead">
